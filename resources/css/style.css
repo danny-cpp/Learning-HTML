@@ -28,18 +28,65 @@ header {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    box-shadow: 0px 0px 48px rgba(0, 0, 0, 0.62);
+}
+
+section {
+    padding: 90px;
+    height: 90vh;
+}
+
+.box {
+    padding: 1%;
 }
 
 /*---------------------------------Header---------------------------------------*/
+h1,h2,h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
 h1 {
     margin-top: 0;
     margin-bottom: 13px;
     color: #fff;
     font-size: 300%;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    word-spacing: inherit;
+    word-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 110%;
+    font-weight: 105px;
+    margin-bottom: 15px;
+    letter-spacing: 0px;
+    word-spacing: 2px;
+}
+
+/*----This is the underline bar of section 2 heading-----*/
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/*-----------------------------Paragraph-------------------------------------*/
+.long-copy {
+    line-height: 148%;
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
 }
 
 .hero-class-box {
@@ -48,6 +95,13 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+    word-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 /*-------------------------------Button---------------------------------------*/
@@ -116,6 +170,14 @@ h1 {
     border-bottom: 2px solid #e67e22;
 }
 
+/*--------------------------------------Icons----------------------*/
+ion-icon {
+    font-size: 550%;
+    display: block;
+    margin-bottom: 10px;
+    color: #e67e22;
+    padding-left: 55px
+}
 
 
 
