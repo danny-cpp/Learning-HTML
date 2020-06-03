@@ -17,6 +17,15 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 /*------------------------------Reusable components--------------------------------*/
 .row {
     max-width: 1140px;
@@ -190,11 +199,13 @@ ion-icon {
 
 /*------------------------------------Features---------------------*/
 .section-features {
-/*
     margin-bottom: 100px;
     box-shadow: 48px 0px -48px rgba(0, 0, 0, 0.62);
-*/
     margin-bottom: 100px;
+}
+
+.section-features .long-copy {
+    margin-bottom: 30px;
 }
 
 /*------------------------------------Gallery----------------------*/
@@ -234,15 +245,59 @@ ion-icon {
     opacity: 1;
 }
 
+/*--------------------------How it works----------------------*/
+.section-steps {
+    background-color: #f4f4f4;
+}
 
+.steps-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
 
+.steps-box:last-child {
+    padding-left: 3%;
+    margin-top: 70px;
+}
 
+.app-screen {
+    width: 40%;
+}
 
+.works-step {
+    margin-bottom: 50px;
+}
 
+.works-step div {
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    padding: 8px;
+    float: left;
+    font-size: 150%;
+    margin-right: 40px;
+}
 
+.btn-app img {
+    height: 50px;
+    width: auto;
+    margin-right: 5px;
+}
 
+#google-button {
+    height: 75px;
+    float: left;
+}
 
-
+#apple-button {
+    padding-top: 10px;
+    height: 63px;
+}
 
 
 
