@@ -33,7 +33,6 @@ header {
 
 section {
     padding: 90px;
-    height: 95vh;
 }
 
 .box {
@@ -189,13 +188,51 @@ ion-icon {
     padding-left: 50px
 }
 
+/*------------------------------------Features---------------------*/
+.section-features {
+/*
+    margin-bottom: 100px;
+    box-shadow: 48px 0px -48px rgba(0, 0, 0, 0.62);
+*/
+    margin-bottom: 100px;
+}
 
+/*------------------------------------Gallery----------------------*/
+.section-meal {
+    padding: 0px;
+}
 
+.meal-showcase {
+    list-style: none;
+    width: 100%;
+    
+}
 
+.meal-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
 
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
 
+.meal-photo img {
+    opacity: 0.75;
+    width: 100%;
+    height: auto;
+    transform: scale(1.20);
+    transition: transform 0.25s, opacity 0.3s;
+}
 
-
+.meal-photo img:hover {
+    transform: scale(1.03);
+    opacity: 1;
+}
 
 
 
